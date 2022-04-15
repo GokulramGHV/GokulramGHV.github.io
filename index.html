@@ -1,433 +1,610 @@
 <!DOCTYPE html>
 <html lang="en" class="">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Gokul Ram</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gokul Ram</title>
 
-		<link rel="stylesheet" href="/public/output.css" />
-		<script
-			defer
-			src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"
-		></script>
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.7.2/font/bootstrap-icons.min.css"
-			integrity="sha512-1fPmaHba3v4A7PaUsComSM4TBsrrRGs+/fv0vrzafQ+Rw+siILTiJa0NtFfvGeyY5E182SDTaF5PqP+XOHgJag=="
-			crossorigin="anonymous"
-			referrerpolicy="no-referrer"
-		/>
+    <link rel="stylesheet" href="/public/output.css" />
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.7.2/font/bootstrap-icons.min.css"
+      integrity="sha512-1fPmaHba3v4A7PaUsComSM4TBsrrRGs+/fv0vrzafQ+Rw+siILTiJa0NtFfvGeyY5E182SDTaF5PqP+XOHgJag=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-		<script
-			src="https://code.jquery.com/jquery-3.6.0.min.js"
-			integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-			crossorigin="anonymous"
-		></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
 
-		<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+    <!-- <script src="/assets/scripts/matter.min.js"></script>
+    <script src="/assets/scripts/particles.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.16.0/matter.min.js"
+    ></script>
 
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
-			rel="stylesheet"
-		/>
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap" rel="stylesheet">
-	
-		<link rel="icon" href="https://i.ibb.co/kxfNYbx/Red-Dream.png">
-		
-		<script src="index.js"></script>
-	</head>
-	<body>
-		<section
-			class="fixed w-full text-gray-700 bg-white body-font shadow-md dark:bg-slate-800 dark:text-white smooth-effect"
-			style="z-index: 100"
-		>
-			<div
-				class="container flex flex-col flex-wrap items-center justify-between py-4 mx-auto md:flex-row max-w-7xl"
-			>
-				<a
-					href="#"
-					class="relative z-10 flex items-center w-auto text-2xl font-extrabold leading-none text-black select-none"
-				>
-					<img
-						src="https://i.ibb.co/kxfNYbx/Red-Dream.png"
-						alt="Avatar Image"
-						class="w-auto h-10 rounded-full mx-2 drop-shadow-lg"
-					/>
-					<span class="drop-shadow-md dark:text-slate-300">Gokul</span>
-				</a>
+    <script src="https://cdn.jsdelivr.net/npm/matter-attractors@0.1.6/build/matter-attractors.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/matter-wrap@0.2.0/build/matter-wrap.min.js"></script> -->
 
-				<nav
-					class="top-0 left-0 z-0 flex items-center justify-center w-full h-full py-5 -ml-0 space-x-5 text-base md:-ml-5 md:py-0 md:absolute"
-				>
-					<a href="#" class="nav-link">
-						<span class="block">Home</span>
-					</a>
-					<a href="#about" class="nav-link">
-						<span class="block">About</span>
-					</a>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
 
-					<a href="#projects" class="nav-link">
-						<span class="block">Projects</span>
-					</a>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
 
-					<a href="#contact" class="nav-link">
-						<span class="block">Contact</span>
-					</a>
-				</nav>
+    <link rel="icon" href="https://i.ibb.co/kxfNYbx/Red-Dream.png" />
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <section
+      class="fixed w-full text-gray-700 bg-white body-font shadow-md dark:bg-slate-800 dark:text-white smooth-effect"
+      style="z-index: 100"
+    >
+      <div
+        class="container flex flex-col flex-wrap items-center justify-between py-4 mx-auto md:flex-row max-w-7xl"
+      >
+        <a
+          href="#"
+          class="relative z-10 flex items-center w-auto text-2xl font-extrabold leading-none text-black select-none"
+        >
+          <img
+            src="https://i.ibb.co/kxfNYbx/Red-Dream.png"
+            alt="Avatar Image"
+            class="w-auto h-10 rounded-full mx-2 drop-shadow-lg"
+          />
+          <span class="drop-shadow-md dark:text-slate-300">Gokul</span>
+        </a>
 
-				<div
-					class="relative z-10 inline-flex items-center space-x-3 md:ml-5 lg:justify-end smooth-effect"
-				>
-					<a class="dark-toggle-btn smooth-effect">
-						<i class="fa fa-moon" id="moon" aria-hidden="true"></i>
-						<i
-							class="fa fa-sun"
-							id="sun"
-							aria-hidden="true"
-							style="display: none"
-						></i>
-					</a>
-				</div>
-			</div>
-		</section>
+        <nav
+          class="top-0 left-0 z-0 flex items-center justify-center w-full h-full py-5 -ml-0 space-x-5 text-base md:-ml-5 md:py-0 md:absolute"
+        >
+          <a href="#" class="nav-link">
+            <span class="block">Home</span>
+          </a>
+          <a href="#about" class="nav-link">
+            <span class="block">About</span>
+          </a>
 
-		<!--section 2-->
-		<section id="2" class>
-			<div
-				id="backdrop"
-				class="flex flex-col justify-center h-screen"
-				style="align-items: center"
-			>
-				<img
-					src="https://i.ibb.co/pJH0b5j/IMG-20210515-162655-379.jpg"
-					alt="IMG-20210515-162655-379"
-					width="200px"
-					style="filter: brightness(0.75); filter: contrast(0.9)"
-					class="rounded-full drop-shadow-xl mt-10 z-0"
-				/>
+          <a href="#projects" class="nav-link">
+            <span class="block">Projects</span>
+          </a>
 
-				<div id="start-intro" class="mt-7" style="text-align: center">
-					<div
-						class="poppins-text text-3xl text-white dark:text-slate-300 smooth-effect"
-						style="
-							font-weight: 600;
-							display: flex;
-							justify-content: center;
-							align-items: center;
-						"
-					>
-						Hi, I'm <span class="grad-text-blue font-bold ml-2">Gokul</span>
-						<div class="ml-2 wave-hello">👋</div>
-					</div>
-					<div
-						class="poppins-text text-xl text-white mt-3 dark:text-slate-300 smooth-effect"
-						style="font-weight: 500"
-					>
-						I'm an aspiring
-						<span class="grad-text-green font-bold">Web Developer</span>!
-					</div>
-				</div>
-			</div>
-		</section>
+          <a href="#contact" class="nav-link">
+            <span class="block">Contact</span>
+          </a>
+        </nav>
 
-		<!--about Section-->
-		<section id="about" class="py-20 px-5 dark:bg-slate-900 smooth-effect">
-			<div
-				class="max-w-4xl mx-auto bg-white rounded-xl card-shadow overflow-hidden dark:bg-slate-800 ring-1 ring-slate-900/5 smooth-effect"
-			>
-				<div class="md:flex">
-					<div class="md:shrink-0">
-						<img
-							class="h-48 w-full object-cover md:h-full md:w-72"
-							src="https://miro.medium.com/max/1400/0*C-cPP9D2MIyeexAT.gif"
-							alt="Man looking at item at a store"
-						/>
-					</div>
-					<div class="p-8">
-						<h1
-							class="text-3xl font-extrabold dark:text-gray-200 smooth-effect"
-						>
-							About
-						</h1>
-						<p
-							class="mt-2 text-lg text-slate-500 dark:text-slate-400 smooth-effect quick-text"
-						>
-							Hi, I'm a 19 year old engineering undergrad pursuing B.Tech
-							Information Technology at
-							<a
-								href="https://www.ssn.edu.in/"
-								target="_blank"
-								class="text-indigo-400 hover:text-indigo-600 smooth-effect"
-								>SSNCE</a
-							>. I'm a tech enthusiast 💻 and I'm also an aspiring Web Developer
-							and Software Engineer 👨‍💻.
-							<br />
-							I love listening to music 🎶 and also enjoy playing video games
-							🎮. I've worked using frameworks like Flask and Django. I primarily code in python 🐍
-							and I also know a little bit of C and JavaScript.
-							You can check out few of my projects down below!
-						</p>
-					</div>
-				</div>
-			</div>
-		</section>
+        <div
+          class="relative z-10 inline-flex items-center space-x-3 md:ml-5 lg:justify-end smooth-effect"
+        >
+          <a class="dark-toggle-btn smooth-effect">
+            <i class="fa fa-moon" id="moon" aria-hidden="true"></i>
+            <i
+              class="fa fa-sun"
+              id="sun"
+              aria-hidden="true"
+              style="display: none"
+            ></i>
+          </a>
+        </div>
+      </div>
+    </section>
 
-		<!--Projects Section-->
-		<section
-			id="projects"
-			class="pb-20 pt-5 px-5 md:px-20 dark:bg-slate-800 smooth-effect"
-		>
-			<h1
-				class="font-extrabold text-4xl mb-12 mt-5 dark:text-gray-200 smooth-effect"
-				style="text-align: center"
-			>
-				Projects
-			</h1>
+    <!--section 2-->
+    <section id="2" class>
+      <div
+        id="backdrop"
+        class="flex flex-col justify-center h-screen"
+        style="align-items: center"
+      >
+        <button onclick="throwConfetti()" class="active:scale-90 smooth-effect">
+          <img
+            src="https://i.ibb.co/pJH0b5j/IMG-20210515-162655-379.jpg"
+            alt="IMG-20210515-162655-379"
+            width="200px"
+            style="filter: brightness(0.75); filter: contrast(0.9)"
+            class="rounded-full drop-shadow-xl mt-10 z-0"
+          />
+        </button>
 
-			<div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
-				<!--Item 1-->
-				<div class="card hover:shadow-xl dark:bg-slate-700 smooth-effect">
-					<a
-						href="https://quick-note-web.herokuapp.com/"
-						class="hover:scale-110"
-					>
-						<img
-							class="w-full h-64 object-cover"
-							src="/assets/quick_note.png"
-							alt="stew"
-						/>
-					</a>
+        <div id="start-intro" class="mt-7" style="text-align: center">
+          <div
+            class="poppins-text text-3xl text-white dark:text-slate-300 smooth-effect"
+            style="
+              font-weight: 600;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            "
+          >
+            Hi, I'm <span class="grad-text-blue font-bold ml-2">Gokul</span>
+            <div class="ml-2 wave-hello">👋</div>
+          </div>
+          <div
+            class="poppins-text text-xl text-white mt-3 dark:text-slate-300 smooth-effect"
+            style="font-weight: 500"
+          >
+            I'm an aspiring
+            <span class="grad-text-green font-bold">Web Developer</span>!
+          </div>
+        </div>
+      </div>
+    </section>
 
-					<div class="m-4">
-						<span class="font-bold dark:text-gray-50">Quick-Note!</span>
-						<span class="block text-gray-500 dark:text-gray-300"
-							>A simple web app that saves notes using markdown functionality.
-						</span>
-						<div class="mt-3 dark:text-gray-200" id="Github link">
-							<a
-								href="https://github.com/GokulramGHV/Quick-Note"
-								target="_blank"
-								class="hover:text-gray-600 text-4xl dark:hover:text-gray-400 smooth-effect"
-							>
-								<i class="bi bi-github"></i>
-							</a>
+    <!--about Section-->
+    <section id="about" class="py-20 px-5 dark:bg-slate-900 smooth-effect">
+      <div
+        class="max-w-4xl mx-auto bg-white rounded-xl card-shadow overflow-hidden dark:bg-slate-800 ring-1 ring-slate-900/5 smooth-effect"
+      >
+        <div class="md:flex">
+          <div class="md:shrink-0">
+            <img
+              class="h-48 w-full object-cover md:h-full md:w-72"
+              src="https://miro.medium.com/max/1400/0*C-cPP9D2MIyeexAT.gif"
+              alt="Man looking at item at a store"
+            />
+          </div>
+          <div class="p-8">
+            <h1
+              class="text-3xl font-extrabold dark:text-gray-200 smooth-effect"
+            >
+              About
+            </h1>
+            <p
+              class="mt-2 text-lg text-slate-500 dark:text-slate-400 smooth-effect quick-text"
+            >
+              Hi, I'm a 19 year old engineering undergrad pursuing B.Tech
+              Information Technology at
+              <a
+                href="https://www.ssn.edu.in/"
+                target="_blank"
+                class="text-indigo-400 hover:text-indigo-600 smooth-effect"
+                >SSNCE</a
+              >. I'm a tech enthusiast 💻 and I'm also an aspiring Web Developer
+              and Software Engineer 👨‍💻.
+              <br />
+              I love listening to music 🎶 and also enjoy playing video games
+              🎮. I've worked using frameworks like Flask and Django. I
+              primarily code in python 🐍 and I also know a little bit of C and
+              JavaScript. You can check out few of my projects down below!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-							<a
-								href="https://quick-note-web.herokuapp.com/"
-								target="_blank"
-								class="hover:text-gray-600 text-4xl ml-1 dark:hover:text-gray-400 smooth-effect"
-							>
-								<i class="bi bi-link-45deg"></i>
-							</a>
-						</div>
-					</div>
-					<div id="badges" class="flex flex-wrap absolute top-0 ml-3">
-						<div class="badge bg-blue-500 text-white">
-							<span class="mx-1">Python</span>
-						</div>
+    <!--Projects Section-->
+    <section
+      id="projects"
+      class="pb-20 pt-5 px-5 md:px-20 dark:bg-slate-800 smooth-effect"
+    >
+      <h1
+        class="font-extrabold text-4xl mb-12 mt-5 dark:text-gray-200 smooth-effect"
+        style="text-align: center"
+      >
+        Projects
+      </h1>
 
-						<div class="badge bg-orange-400 text-white ml-2">
-							<span class="mx-1">HTML/CSS</span>
-						</div>
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
+        <!--Item 1-->
+        <div class="card hover:shadow-xl dark:bg-slate-700 smooth-effect">
+          <a
+            href="https://quick-note-web.herokuapp.com/"
+            class="hover:scale-110"
+          >
+            <img
+              class="w-full h-64 object-cover"
+              src="/assets/quick_note.png"
+              alt="stew"
+            />
+          </a>
 
-						<div class="badge bg-slate-500 text-white ml-2">
-							<span class="mx-1">Flask</span>
-						</div>
+          <div class="m-4">
+            <span class="font-bold dark:text-gray-50">Quick-Note!</span>
+            <span class="block text-gray-500 dark:text-gray-300"
+              >A simple web app that saves notes using markdown functionality.
+            </span>
+            <div class="mt-3 dark:text-gray-200" id="Github link">
+              <a
+                href="https://github.com/GokulramGHV/Quick-Note"
+                target="_blank"
+                class="hover:text-gray-600 text-4xl dark:hover:text-gray-400 smooth-effect"
+              >
+                <i class="bi bi-github"></i>
+              </a>
 
-						<div class="badge bg-violet-500 text-white ml-2">
-							<span class="mx-1">Bootstrap</span>
-						</div>
-					</div>
-				</div>
+              <a
+                href="https://quick-note-web.herokuapp.com/"
+                target="_blank"
+                class="hover:text-gray-600 text-4xl ml-1 dark:hover:text-gray-400 smooth-effect"
+              >
+                <i class="bi bi-link-45deg"></i>
+              </a>
+            </div>
+          </div>
+          <div id="badges" class="flex flex-wrap absolute top-0 ml-3">
+            <div class="badge bg-blue-500 text-white">
+              <span class="mx-1">Python</span>
+            </div>
 
-				<!--Item 2-->
-				<div class="card hover:shadow-xl dark:bg-slate-700 smooth-effect">
-					<a
-						href="https://gokulramghv.github.io/Martial-arts-sim/"
-						class="hover:scale-110"
-					>
-						<img
-							class="w-full h-64 object-cover"
-							src="/assets/martial_sim.png"
-							alt="stew"
-						/>
-					</a>
+            <div class="badge bg-orange-400 text-white ml-2">
+              <span class="mx-1">HTML/CSS</span>
+            </div>
 
-					<div class="m-4">
-						<span class="font-bold dark:text-gray-50 smooth-effect"
-							>Martial Arts Sim</span
-						>
-						<span class="block text-gray-500 dark:text-gray-300 smooth-effect">
-							A martial artist who performs actions based on key presses.
-						</span>
-						<div class="mt-3 dark:text-gray-200" id="Github link">
-							<a
-								href="https://github.com/GokulramGHV/Martial-arts-sim"
-								target="_blank"
-								class="hover:text-gray-600 text-4xl dark:hover:text-gray-400 smooth-effect"
-							>
-								<i class="bi bi-github"></i>
-							</a>
+            <div class="badge bg-slate-500 text-white ml-2">
+              <span class="mx-1">Flask</span>
+            </div>
 
-							<a
-								href="https://gokulramghv.github.io/Martial-arts-sim/"
-								target="_blank"
-								class="hover:text-gray-600 text-4xl ml-1 dark:hover:text-gray-400 smooth-effect"
-							>
-								<i class="bi bi-link-45deg"></i>
-							</a>
-						</div>
-					</div>
-					<div id="badges" class="flex flex-wrap absolute top-0 ml-3">
-						<div class="badge bg-orange-400 text-white ml-2">
-							<span class="mx-1">HTML/CSS</span>
-						</div>
+            <div class="badge bg-violet-500 text-white ml-2">
+              <span class="mx-1">Bootstrap</span>
+            </div>
+          </div>
+        </div>
+        <!--Item 1-->
 
-						<div class="badge bg-yellow-500 text-white ml-2">
-							<span class="mx-1">JavaScript</span>
-						</div>
-					</div>
-				</div>
+        <!--item-2-->
+        <div class="card hover:shadow-xl dark:bg-slate-700 smooth-effect">
+          <a
+            href="https://replit.com/@GokulramGHV/WordleCLI"
+            class="hover:scale-110"
+          >
+            <img
+              class="w-full h-64 object-cover scale-105"
+              src="/assets/wordle_clone-2.png"
+              alt="stew"
+            />
+          </a>
 
-				<!--Item 3-->
-				<div class="card hover:shadow-xl dark:bg-slate-700 smooth-effect">
-					<a href="https://farmbyte.herokuapp.com/" class="hover:scale-110">
-						<img
-							class="w-full h-64 object-cover"
-							src="/assets/farmbyte.png"
-							alt="stew"
-						/>
-					</a>
+          <div class="m-4 smooth-effect">
+            <span class="font-bold dark:text-gray-50">Wordle Clone CLI</span>
+            <span class="block text-gray-500 dark:text-gray-300"
+              >Standard Wordle Clone in command line interface (CLI) using the
+              python rich module.
+            </span>
+            <div class="mt-3 dark:text-gray-200" id="Github link">
+              <a
+                href="https://github.com/GokulramGHV/Wordle-Clone"
+                target="_blank"
+                class="hover:text-gray-600 text-4xl dark:hover:text-gray-400 smooth-effect"
+              >
+                <i class="bi bi-github"></i>
+              </a>
 
-					<div class="m-4 smooth-effect">
-						<span class="font-bold dark:text-gray-50">FarmByte (WIP)</span>
-						<span class="block text-gray-500 dark:text-gray-300"
-							>A webapp for self help groups (சுய உதவிக் குழு), local
-							businesses, and farmers.
-						</span>
-						<div class="mt-3 dark:text-gray-200" id="Github link">
-							<a
-								href="https://github.com/hariharan-tech/FarmByte_by_BytePage_Hackinfinity"
-								target="_blank"
-								class="hover:text-gray-600 text-4xl dark:hover:text-gray-400 smooth-effect"
-							>
-								<i class="bi bi-github"></i>
-							</a>
+              <a
+                href="https://replit.com/@GokulramGHV/WordleCLI"
+                target="_blank"
+                class="hover:text-gray-600 text-4xl ml-1 dark:hover:text-gray-400 smooth-effect"
+              >
+                <i class="bi bi-link-45deg"></i>
+              </a>
+            </div>
+          </div>
+          <div id="badges" class="flex flex-wrap absolute top-0 ml-3">
+            <div class="badge bg-blue-500 text-white">
+              <span class="mx-1">Python</span>
+            </div>
 
-							<a
-								href="https://farmbyte.herokuapp.com/"
-								target="_blank"
-								class="hover:text-gray-600 text-4xl ml-1 dark:hover:text-gray-400 smooth-effect"
-							>
-								<i class="bi bi-link-45deg"></i>
-							</a>
-						</div>
-					</div>
-					<div id="badges" class="flex flex-wrap absolute top-0 ml-3">
-						<div class="badge bg-blue-500 text-white">
-							<span class="mx-1">Python</span>
-						</div>
+            <div class="badge bg-red-500 text-white ml-2">
+              <span class="mx-1">Rich</span>
+            </div>
+          </div>
+        </div>
+        <!--item-2-->
 
-						<div class="badge bg-orange-400 text-white ml-2">
-							<span class="mx-1">HTML/CSS</span>
-						</div>
+        <!--Item 3-->
+        <div class="card hover:shadow-xl dark:bg-slate-700 smooth-effect">
+          <a href="https://farmbyte.herokuapp.com/" class="hover:scale-110">
+            <img
+              class="w-full h-64 object-cover"
+              src="/assets/farmbyte.png"
+              alt="stew"
+            />
+          </a>
 
-						<div class="badge bg-slate-500 text-white ml-2">
-							<span class="mx-1">Flask</span>
-						</div>
+          <div class="m-4 smooth-effect">
+            <span class="font-bold dark:text-gray-50">FarmByte (WIP)</span>
+            <span class="block text-gray-500 dark:text-gray-300"
+              >A webapp for self help groups (சுய உதவிக் குழு), local
+              businesses, and farmers.
+            </span>
+            <div class="mt-3 dark:text-gray-200" id="Github link">
+              <a
+                href="https://github.com/hariharan-tech/FarmByte_by_BytePage_Hackinfinity"
+                target="_blank"
+                class="hover:text-gray-600 text-4xl dark:hover:text-gray-400 smooth-effect"
+              >
+                <i class="bi bi-github"></i>
+              </a>
 
-						<div class="badge bg-violet-500 text-white ml-2">
-							<span class="mx-1">Bootstrap</span>
-						</div>
-					</div>
-				</div>
+              <a
+                href="https://farmbyte.herokuapp.com/"
+                target="_blank"
+                class="hover:text-gray-600 text-4xl ml-1 dark:hover:text-gray-400 smooth-effect"
+              >
+                <i class="bi bi-link-45deg"></i>
+              </a>
+            </div>
+          </div>
+          <div id="badges" class="flex flex-wrap absolute top-0 ml-3">
+            <div class="badge bg-blue-500 text-white">
+              <span class="mx-1">Python</span>
+            </div>
 
-				<!--item-4-->
-			</div>
-		</section>
+            <div class="badge bg-orange-400 text-white ml-2">
+              <span class="mx-1">HTML/CSS</span>
+            </div>
 
-		<!--contact-->
-		<section id="contact" class="px-5 pb-20 dark:bg-slate-800 smooth-effect">
-			<h1
-				class="font-extrabold text-4xl mb-16 dark:text-gray-200 smooth-effect"
-				style="text-align: center"
-			>
-				Contact
-			</h1>
-			<div
-				class=""
-				style="
-					display: flex;
-					justify-content: center;
-					align-items: center;
-					width: 100%;
-				"
-			>
-				<div class="grid grid-cols-2 md:grid-cols-4 gap-20 md:gap-48">
-					<!--Link 1-->
-					<a href="https://www.instagram.com/gokul_ghv/" target="_blank">
-						<div
-							id="1"
-							class="p-3 w-fit h-fit card-shadow rounded-xl flex justify-center dark:bg-slate-700 smooth-effect contact-card"
-							style="align-items: center"
-						>
-							<i class="bi bi-instagram text-6xl grad-insta"></i>
-						</div>
-					</a>
-					<!--Link 2-->
-					<a href="https://twitter.com/AGokulram" target="_blank">
-						<div
-							id="2"
-							class="p-3 w-fit h-fit card-shadow rounded-xl flex justify-center dark:bg-slate-700 smooth-effect contact-card"
-							style="align-items: center"
-						>
-							<i class="bi bi-twitter text-6xl grad-text-blue"></i>
-						</div>
-					</a>
-					<!--Link 3-->
-					<a href="mailto:gokulharividhya@gmail.com" target="_blank">
-						<div
-							id="3"
-							class="p-3 w-fit h-fit card-shadow rounded-xl flex justify-center dark:bg-slate-700 smooth-effect contact-card"
-							style="align-items: center"
-						>
-							<i class="bi bi-envelope text-6xl grad-google"></i>
-						</div>
-					</a>
-					<!--Link 4-->
-					<a href="https://github.com/GokulramGHV" target="_blank">
-						<div
-							id="4"
-							class="p-3 w-fit h-fit card-shadow rounded-xl flex justify-center dark:bg-slate-700 smooth-effect contact-card"
-							style="align-items: center"
-						>
-							<i class="bi bi-github text-6xl dark:text-gray-50"></i>
-						</div>
-					</a>
-				</div>
-			</div>
-		</section>
+            <div class="badge bg-slate-500 text-white ml-2">
+              <span class="mx-1">Flask</span>
+            </div>
 
-		<footer>
-			<div class="w-full h-24 bg-gray-100 p-5 dark:bg-slate-900 smooth-effect">
-				<div
-					style="text-align: center"
-					class="text-lg font-semibold text-slate-600 dark:text-slate-500 smooth-effect"
-				>
-					Copyright © 2022 Gokulram A
-				</div>
-				<div
-					style="text-align: center"
-					class="dark:text-gray-400 smooth-effect"
-				>
-					Developed with ❤ using Tailwind
-				</div>
-			</div>
-		</footer>
-	</body>
+            <div class="badge bg-violet-500 text-white ml-2">
+              <span class="mx-1">Bootstrap</span>
+            </div>
+          </div>
+        </div>
+        <!--Item 3-->
+
+        <!--Item 4-->
+        <div class="card hover:shadow-xl dark:bg-slate-700 smooth-effect">
+          <a
+            href="https://gokulramghv.github.io/Martial-arts-sim/"
+            class="hover:scale-110"
+          >
+            <img
+              class="w-full h-64 object-cover"
+              src="/assets/martial_sim.png"
+              alt="stew"
+            />
+          </a>
+
+          <div class="m-4">
+            <span class="font-bold dark:text-gray-50 smooth-effect"
+              >Martial Arts Sim</span
+            >
+            <span class="block text-gray-500 dark:text-gray-300 smooth-effect">
+              A martial artist who performs actions based on key presses.
+            </span>
+            <div class="mt-3 dark:text-gray-200" id="Github link">
+              <a
+                href="https://github.com/GokulramGHV/Martial-arts-sim"
+                target="_blank"
+                class="hover:text-gray-600 text-4xl dark:hover:text-gray-400 smooth-effect"
+              >
+                <i class="bi bi-github"></i>
+              </a>
+
+              <a
+                href="https://gokulramghv.github.io/Martial-arts-sim/"
+                target="_blank"
+                class="hover:text-gray-600 text-4xl ml-1 dark:hover:text-gray-400 smooth-effect"
+              >
+                <i class="bi bi-link-45deg"></i>
+              </a>
+            </div>
+          </div>
+          <div id="badges" class="flex flex-wrap absolute top-0 ml-3">
+            <div class="badge bg-orange-400 text-white ml-2">
+              <span class="mx-1">HTML/CSS</span>
+            </div>
+
+            <div class="badge bg-yellow-500 text-white ml-2">
+              <span class="mx-1">JavaScript</span>
+            </div>
+          </div>
+        </div>
+        <!--Item 4-->
+
+        <!--item-5-->
+        <div class="card hover:shadow-xl dark:bg-slate-700 smooth-effect">
+          <a
+            href="https://task-manager-gokul.herokuapp.com/"
+            class="hover:scale-110"
+          >
+            <img
+              class="w-full h-64 object-cover"
+              src="/assets/task_manager.png"
+              alt="stew"
+            />
+          </a>
+
+          <div class="m-4 smooth-effect">
+            <span class="font-bold dark:text-gray-50">Task Manager</span>
+            <span class="block text-gray-500 dark:text-gray-300"
+              >A web app that manages your tasks according to your priority!
+            </span>
+            <div class="mt-3 dark:text-gray-200" id="Github link">
+              <a
+                href="https://github.com/GokulramGHV/Task-Manager-GDC"
+                target="_blank"
+                class="hover:text-gray-600 text-4xl dark:hover:text-gray-400 smooth-effect"
+              >
+                <i class="bi bi-github"></i>
+              </a>
+
+              <a
+                href="https://task-manager-gokul.herokuapp.com/"
+                target="_blank"
+                class="hover:text-gray-600 text-4xl ml-1 dark:hover:text-gray-400 smooth-effect"
+              >
+                <i class="bi bi-link-45deg"></i>
+              </a>
+            </div>
+          </div>
+          <div id="badges" class="flex flex-wrap absolute top-0 ml-3">
+            <div class="badge bg-blue-500 text-white">
+              <span class="mx-1">Python</span>
+            </div>
+
+            <div class="badge bg-orange-400 text-white ml-2">
+              <span class="mx-1">HTML/CSS</span>
+            </div>
+
+            <div class="badge bg-green-600 text-white ml-2">
+              <span class="mx-1">Django</span>
+            </div>
+
+            <div class="badge bg-sky-500 text-white ml-2">
+              <span class="mx-1">Tailwind</span>
+            </div>
+          </div>
+        </div>
+        <!--item-5-->
+
+        <!--item-6-->
+        <div class="card hover:shadow-xl dark:bg-slate-700 smooth-effect">
+          <a
+            href="https://level-9--singular-marshmallow-ec82c9.netlify.app/"
+            class="hover:scale-110"
+          >
+            <img
+              class="w-full h-64 object-cover scale-105"
+              src="/assets/typeform_clone.png"
+              alt="stew"
+            />
+          </a>
+
+          <div class="m-4 smooth-effect">
+            <span class="font-bold dark:text-gray-50">React Forms</span>
+            <span class="block text-gray-500 dark:text-gray-300"
+              >My attempt in making a typeform clone, can create forms and share
+              them.
+            </span>
+            <div class="mt-3 dark:text-gray-200" id="Github link">
+              <a
+                href="https://github.com/GokulramGHV/WD301-React-TypeScript-Course/tree/level-9"
+                target="_blank"
+                class="hover:text-gray-600 text-4xl dark:hover:text-gray-400 smooth-effect"
+              >
+                <i class="bi bi-github"></i>
+              </a>
+
+              <a
+                href="https://level-9--singular-marshmallow-ec82c9.netlify.app/"
+                target="_blank"
+                class="hover:text-gray-600 text-4xl ml-1 dark:hover:text-gray-400 smooth-effect"
+              >
+                <i class="bi bi-link-45deg"></i>
+              </a>
+            </div>
+          </div>
+          <div id="badges" class="flex flex-wrap absolute top-0 ml-3">
+            <div class="badge bg-blue-600 text-white">
+              <span class="mx-1">React</span>
+            </div>
+
+            <div class="badge bg-sky-600 text-white ml-2">
+              <span class="mx-1">TypeScript</span>
+            </div>
+
+            <div class="badge bg-green-600 text-white ml-2">
+              <span class="mx-1">Django</span>
+            </div>
+
+            <div class="badge bg-sky-500 text-white ml-2">
+              <span class="mx-1">Tailwind</span>
+            </div>
+          </div>
+        </div>
+        <!--item-6-->
+      </div>
+    </section>
+
+    <!--contact-->
+    <section id="contact" class="px-5 pb-20 dark:bg-slate-800 smooth-effect">
+      <h1
+        class="font-extrabold text-4xl mb-16 dark:text-gray-200 smooth-effect"
+        style="text-align: center"
+      >
+        Contact
+      </h1>
+      <div
+        class=""
+        style="
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+        "
+      >
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-20 md:gap-48">
+          <!--Link 1-->
+          <a href="https://www.instagram.com/gokul_ghv/" target="_blank">
+            <div
+              id="1"
+              class="p-3 w-fit h-fit card-shadow rounded-xl flex justify-center dark:bg-slate-700 smooth-effect contact-card"
+              style="align-items: center"
+            >
+              <i class="bi bi-instagram text-6xl grad-insta"></i>
+            </div>
+          </a>
+          <!--Link 2-->
+          <a href="https://twitter.com/AGokulram" target="_blank">
+            <div
+              id="2"
+              class="p-3 w-fit h-fit card-shadow rounded-xl flex justify-center dark:bg-slate-700 smooth-effect contact-card"
+              style="align-items: center"
+            >
+              <i class="bi bi-twitter text-6xl grad-text-blue"></i>
+            </div>
+          </a>
+          <!--Link 3-->
+          <a href="mailto:gokulharividhya@gmail.com" target="_blank">
+            <div
+              id="3"
+              class="p-3 w-fit h-fit card-shadow rounded-xl flex justify-center dark:bg-slate-700 smooth-effect contact-card"
+              style="align-items: center"
+            >
+              <i class="bi bi-envelope text-6xl grad-google"></i>
+            </div>
+          </a>
+          <!--Link 4-->
+          <a href="https://github.com/GokulramGHV" target="_blank">
+            <div
+              id="4"
+              class="p-3 w-fit h-fit card-shadow rounded-xl flex justify-center dark:bg-slate-700 smooth-effect contact-card"
+              style="align-items: center"
+            >
+              <i class="bi bi-github text-6xl dark:text-gray-50"></i>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="w-full h-24 bg-gray-100 p-5 dark:bg-slate-900 smooth-effect">
+        <div
+          style="text-align: center"
+          class="text-lg font-semibold text-slate-600 dark:text-slate-500 smooth-effect"
+        >
+          Copyright © 2022 Gokulram A
+        </div>
+        <div
+          style="text-align: center"
+          class="dark:text-gray-400 smooth-effect"
+        >
+          Developed with ❤ using Tailwind
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
