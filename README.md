@@ -1,2 +1,5 @@
-# Capstone-WD101
-Capstone Project for the WD101 Course: https://gokulramghv.github.io/Capstone-WD101/
+# Minimalistic Portfolio Site
+
+#### **Link:** [gokulram.me](https://gokulram.me)
+
+Made with :heart: using [Tailwind](https://tailwindcss.com) and [Spline](https://spline.design)
