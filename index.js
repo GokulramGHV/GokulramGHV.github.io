@@ -177,8 +177,7 @@ projectsList = [
   },
 ];
 
-let darkMode = false;
-document.getElementById('sun').style.display = 'none';
+var darkMode = !window.matchMedia('(prefers-color-scheme: dark)').matches;
 function toggle() {
   darkMode = !darkMode;
   const video_dark = document.getElementById('back_video_dark');
@@ -197,6 +196,15 @@ function toggle() {
     if (video_light) video_light.classList.remove('opacity-0');
   }
 }
+toggle();
+
+var avatar_opacity = 100;
+const changeAvatarOpacity = () => {
+  avatar_opacity = avatar_opacity === 100 ? 0 : 100;
+  document
+    .getElementById('avatar')
+    .setAttribute('style', `opacity: ${avatar_opacity}`);
+};
 
 function createVideoElement(url, id, hidden) {
   const video = document.createElement('video');
@@ -219,12 +227,13 @@ window.addEventListener('load', () => {
   if (window.innerWidth < 600) {
     createVideoElement(
       'https://res.cloudinary.com/di4swkq4j/video/upload/v1679815224/light_gk1exr.mp4',
-      'back_video_light'
+      'back_video_light',
+      darkMode
     );
     createVideoElement(
       'https://res.cloudinary.com/di4swkq4j/video/upload/v1679815228/dark_blsdgj.mp4',
       'back_video_dark',
-      true
+      !darkMode
     );
   } else {
     const viewer = document.createElement('spline-viewer');
@@ -277,6 +286,7 @@ function renderProjectSection(projectSection) {
   >
     <a href="${project.url}" target="_blank">
       <img
+        loading="lazy"
         class="w-full h-64 object-cover"
         src="${project.image}"
         alt="stew"

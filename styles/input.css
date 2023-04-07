@@ -21,11 +21,11 @@
 }
 
 .elementToPopOut {
-  animation: popOut 0.4s ease-in-out forwards;
+  animation: popOut 0.5s cubic-bezier(1, 0, 0.58, 1) forwards;
 }
 
 .elementToPopIn {
-  animation: popIn 0.4s ease-in-out forwards;
+  animation: popIn 0.5s cubic-bezier(0.42, 0, 0, 1.01) forwards;
 }
 
 * {
@@ -51,4 +51,32 @@
 
 .badge {
   @apply rounded-full shadow-lg text-xs mt-3 font-semibold uppercase p-2;
+}
+
+@media only screen and (min-width: 640px) {
+  body {
+    overflow: overlay;
+  }
+}
+
+/* custom scrollbar */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #85898954;
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+  object-fit: cover;
+  background-repeat: no-repeat;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #a39d9da1;
 }
