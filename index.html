@@ -16,6 +16,13 @@
       type="module"
       src="https://unpkg.com/@splinetool/viewer/build/spline-viewer.js"
     ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.7.2/font/bootstrap-icons.min.css"
+      integrity="sha512-1fPmaHba3v4A7PaUsComSM4TBsrrRGs+/fv0vrzafQ+Rw+siILTiJa0NtFfvGeyY5E182SDTaF5PqP+XOHgJag=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Gokulram A</title>
   </head>
   <body
@@ -210,49 +217,22 @@
       </footer>
     </div>
     <section
-      class="min-h-screen fixed top-0 left-0 bg-gray-50 dark:bg-slate-800 z-[52] w-full flex justify-center flex-col items-center shadow-lg"
+      class="min-h-screen absolute top-0 left-0 bg-gray-50 dark:bg-slate-800 z-[52] w-full flex flex-col items-center shadow-lg sm:px-10 px-5"
       id="projects"
     >
-      <h1 class="text-2xl font-semibold text-center my-6">Projects</h1>
+      <h1 class="text-3xl font-bold text-center mb-6 mt-8">Projects 🛠️</h1>
       <button
         onclick="setViewProjects()"
         class="border-gray-800 dark:border-gray-200 border-2 rounded-lg px-5 py-2.5 hover:bg-gray-800 dark:hover:bg-gray-100 hover:text-gray-100 dark:hover:text-gray-700"
       >
-        View Home
+        Back to Home
       </button>
-      <!-- <div class="grid gap-4">
-          <a href="survey_form/survey.html" target="_blank">
-            <div
-              class="flex items-center gap-3 p-4 bg-blue-300 dark:bg-blue-400 text-gray-700 dark:text-gray-50 rounded-lg shadow-lg hover:scale-105 transition duration-200 ease-in-out"
-            >
-              <img
-                src="assets/survey.png"
-                alt=""
-                height="50"
-                width="50"
-                class="rounded-lg"
-              />
-              <div class="font-medium">Survey form: WD101 Project</div>
-            </div>
-          </a>
-          <a
-            href="https://gokulramghv.github.io/Martial-arts-sim/"
-            target="_blank"
-          >
-            <div
-              class="flex items-center gap-3 p-4 bg-orange-300 dark:bg-orange-400 text-gray-700 dark:text-gray-50 rounded-lg shadow-lg hover:scale-105 transition duration-200 ease-in-out"
-            >
-              <img
-                src="assets/martial_arts.png"
-                alt=""
-                height="60"
-                width="60"
-                class="rounded-lg"
-              />
-              <div class="font-medium">Martial Arts Simulator</div>
-            </div>
-          </a>
-        </div> -->
+      <div id="list-projects" class="w-full"></div>
+      <div class="my-10">
+        <p class="font-semibold italic text-gray-300 dark:text-gray-600">
+          Looks like you've reached the end!
+        </p>
+      </div>
     </section>
   </body>
 </html>

@@ -10,12 +10,12 @@
     "type": "git",
     "url": "git+https://github.com/GokulramGHV/Capstone-WD101.git"
   },
-  "author": "",
+  "author": "Gokulram A",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/GokulramGHV/Capstone-WD101/issues"
+    "url": "https://github.com/GokulramGHV/gokulramghv.github.io/issues"
   },
-  "homepage": "https://github.com/GokulramGHV/Capstone-WD101#readme",
+  "homepage": "https://github.com/GokulramGHV/gokulramghv.github.io#readme",
   "devDependencies": {
     "tailwindcss": "^3.1.6"
   }

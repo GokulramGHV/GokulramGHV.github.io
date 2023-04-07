@@ -44,3 +44,11 @@
   -webkit-backdrop-filter: blur(8.7px);
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
+
+.card {
+  @apply bg-white rounded-xl overflow-hidden shadow-lg relative flex flex-col;
+}
+
+.badge {
+  @apply rounded-full shadow-lg text-xs mt-3 font-semibold uppercase p-2;
+}
