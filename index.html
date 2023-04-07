@@ -18,10 +18,13 @@
     ></script>
     <title>Gokulram A</title>
   </head>
-  <body class="text-gray-800 dark:text-gray-100">
+  <body
+    class="text-gray-800 dark:text-gray-100"
+    style="font-family: 'Space Mono', monospace"
+  >
     <div
       class="w-full min-h-screen flex flex-col bg-gray-100 dark:bg-slate-900"
-      style="font-family: 'Space Mono', monospace"
+      id="home"
     >
       <div class="flex justify-between z-50 px-5 pt-5">
         <div class="flex gap-4 items-center">
@@ -142,7 +145,7 @@
                 width="22"
                 height="22"
                 fill="currentColor"
-                class="bi bi-laptop-fill mt-1 mr-0.5"
+                class="bi bi-laptop-fill mr-0.5"
                 viewBox="0 0 16 16"
               >
                 <path
@@ -156,7 +159,7 @@
                 width="20"
                 height="20"
                 fill="currentColor"
-                class="bi bi-geo-alt-fill mt-1"
+                class="bi bi-geo-alt-fill"
                 viewBox="0 0 16 16"
               >
                 <path
@@ -167,7 +170,7 @@
               <h2 class="sm:text-lg text-sm m-0">Chennai</h2>
             </div>
           </div>
-          <section id="home" class="z-50">
+          <section class="z-50">
             <div class="mt-4 w-fit mx-auto">
               <hr class="w-full mb-2 border-gray-600 dark:border-gray-300" />
               <h3 class="text-xl font-semibold text-center mb-1">About</h3>
@@ -190,55 +193,66 @@
               />
             </div>
           </section>
-          <!-- <section class="mt-2" id="projects">
-            <h2 class="text-xl font-semibold text-center my-4">Projects</h2>
-            <div class="grid gap-4">
-              <a href="survey_form/survey.html" target="_blank">
-                <div
-                  class="flex items-center gap-3 p-4 bg-blue-300 dark:bg-blue-400 text-gray-700 dark:text-gray-50 rounded-lg shadow-lg hover:scale-105 transition duration-200 ease-in-out"
-                >
-                  <img
-                    src="assets/survey.png"
-                    alt=""
-                    height="50"
-                    width="50"
-                    class="rounded-lg"
-                  />
-                  <div class="font-medium">Survey form: WD101 Project</div>
-                </div>
-              </a>
-              <a
-                href="https://gokulramghv.github.io/Martial-arts-sim/"
-                target="_blank"
-              >
-                <div
-                  class="flex items-center gap-3 p-4 bg-orange-300 dark:bg-orange-400 text-gray-700 dark:text-gray-50 rounded-lg shadow-lg hover:scale-105 transition duration-200 ease-in-out"
-                >
-                  <img
-                    src="assets/martial_arts.png"
-                    alt=""
-                    height="60"
-                    width="60"
-                    class="rounded-lg"
-                  />
-                  <div class="font-medium">Martial Arts Simulator</div>
-                </div>
-              </a>
-            </div>
-          </section> -->
 
-          <!-- id = toggle -->
-          <a
-            href="https://github.com/GokulramGHV?tab=repositories"
+          <!-- href="https://github.com/GokulramGHV?tab=repositories" -->
+          <button
+            id="toggle"
+            onclick="setViewProjects()"
             class="border-gray-800 dark:border-gray-200 border-2 rounded-lg px-5 py-2.5 mt-10 hover:bg-gray-800 dark:hover:bg-gray-100 hover:text-gray-100 dark:hover:text-gray-700"
           >
             View Projects
-          </a>
+          </button>
         </div>
       </div>
+
       <footer class="text-right text-sm z-50 p-5">
         Copyright <span class="text-md">©</span> 2023 Gokulram A
       </footer>
     </div>
+    <section
+      class="min-h-screen fixed top-0 left-0 bg-gray-50 dark:bg-slate-800 z-[52] w-full flex justify-center flex-col items-center shadow-lg"
+      id="projects"
+    >
+      <h1 class="text-2xl font-semibold text-center my-6">Projects</h1>
+      <button
+        onclick="setViewProjects()"
+        class="border-gray-800 dark:border-gray-200 border-2 rounded-lg px-5 py-2.5 hover:bg-gray-800 dark:hover:bg-gray-100 hover:text-gray-100 dark:hover:text-gray-700"
+      >
+        View Home
+      </button>
+      <!-- <div class="grid gap-4">
+          <a href="survey_form/survey.html" target="_blank">
+            <div
+              class="flex items-center gap-3 p-4 bg-blue-300 dark:bg-blue-400 text-gray-700 dark:text-gray-50 rounded-lg shadow-lg hover:scale-105 transition duration-200 ease-in-out"
+            >
+              <img
+                src="assets/survey.png"
+                alt=""
+                height="50"
+                width="50"
+                class="rounded-lg"
+              />
+              <div class="font-medium">Survey form: WD101 Project</div>
+            </div>
+          </a>
+          <a
+            href="https://gokulramghv.github.io/Martial-arts-sim/"
+            target="_blank"
+          >
+            <div
+              class="flex items-center gap-3 p-4 bg-orange-300 dark:bg-orange-400 text-gray-700 dark:text-gray-50 rounded-lg shadow-lg hover:scale-105 transition duration-200 ease-in-out"
+            >
+              <img
+                src="assets/martial_arts.png"
+                alt=""
+                height="60"
+                width="60"
+                class="rounded-lg"
+              />
+              <div class="font-medium">Martial Arts Simulator</div>
+            </div>
+          </a>
+        </div> -->
+    </section>
   </body>
 </html>
