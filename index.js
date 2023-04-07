@@ -81,7 +81,7 @@ projectsList = [
     ],
   },
   {
-    title: 'Projects I worked on when learning development:',
+    title: 'Projects I worked on while learning development:',
     projects: [
       {
         title: 'Kanban Task Manager',
