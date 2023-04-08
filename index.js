@@ -67,7 +67,7 @@ projectsList = [
       {
         title: 'The Attendance App',
         description:
-          'Create your own calculator and share the link with friends. Say goodbye to manual calculations and hello to stress-free GPA calculating!',
+          "An attendance management app for teachers and professors. It allows them to mark attendance for different sessions and view students' attendance percentage.",
         image:
           'https://res.cloudinary.com/di4swkq4j/image/upload/v1680856001/Screenshot_from_2023-04-07_13-56-14_td9hhf.png',
         url: 'https://attendance-app-nu.vercel.app/',
@@ -101,9 +101,9 @@ projectsList = [
       {
         title: 'React Forms',
         description:
-          'A simple GoogleForm/Typeform clone that can create forms and share the link with others.',
+          'A simple GoogleForm/Typeform clone using which you can create forms and share the link with others.',
         image:
-          'https://camo.githubusercontent.com/a1877f48882c38cf0f37865eb092304c82afae152164b19d2e2863fab4ff48b0/68747470733a2f2f7777772e707570696c66697273742e7363686f6f6c2f6d61726b646f776e5f6174746163686d656e74732f343633332f6c732d536f6b487754504d746f59786e595667486267',
+          'https://raw.githubusercontent.com/GokulramGHV/gokulramghv.github.io/site-v1/assets/typeform_clone.png',
         url: 'https://singular-marshmallow-ec82c9.netlify.app/',
         github: 'https://github.com/GokulramGHV/WD301-React-TypeScript-Course',
         badges: [
@@ -121,8 +121,7 @@ projectsList = [
         url: 'https://task-manager-gokul.herokuapp.com/',
         github: 'https://github.com/GokulramGHV/Task-Manager-GDC',
         badges: [
-          { name: 'React', color: 'bg-blue-400' },
-          { name: 'Typescript', color: 'bg-blue-600' },
+          { name: 'Python', color: 'bg-blue-500' },
           { name: 'Django', color: 'bg-green-600' },
           { name: 'Tailwind', color: 'bg-sky-400' },
         ],
